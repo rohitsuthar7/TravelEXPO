@@ -1,4 +1,0 @@
-{
-    "mongoURI":"mongodb+srv://rohit:rohitdb123@cluster0.iakchi7.mongodb.net/TravelExpoNew?retryWrites=true&w=majority",
-    "jwtSecret":"ItsMySecretKeyHereDontTouchIt"
-}
