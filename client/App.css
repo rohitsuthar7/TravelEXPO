@@ -1,0 +1,409 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bahnschrift';
+    background-color:aliceblue;
+    overflow-x: hidden;
+}
+
+/*Carousel Add on classes*/
+div.carousel-images{
+    height: 600px;
+}
+div.carousel-images img{
+    height: 100%;
+    opacity: 0.9;
+    image-rendering: optimizeQuality;
+}
+div.carousel-detail{
+    align-items: center;
+    bottom: 10%;
+}
+@media screen and (max-width:1250px){
+    div.carousel-images{
+        height: 450px;
+    }
+}
+
+/*_________Shadows Box and Text_____________*/
+.margin-top-content{
+    margin-top: 66px;
+}
+.box-shadow{
+    box-shadow: 0 0 10px lightgrey;
+}
+.box-dark-shadow{
+    box-shadow: 0 0 10px black;
+}
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*______________Home page designs____________*/
+div#about-us{
+    display: none;
+} 
+div#custom-text-container div.row{
+    margin-top: 20px;
+}
+div#custom-text-container div.row div p{
+    font-size: 19px;
+} 
+div.half-color-background{
+    background: linear-gradient(to bottom,transparent 50%,#d2d9ff 50%) ;
+}
+div.half-color-background div.row div.card{
+    transition: 0.5s;
+}
+div.half-color-background div.row div.card:hover{
+    scale: 1.05;
+}
+.custom-card-image{
+    height: 200px;
+    object-fit: cover;
+}
+div#last-field > div.row{
+    margin-top: 20px;
+    position: relative;
+}
+div#last-field > div.row div.box-shadow{
+    background-image: url('images/bottomCover.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+}
+div.last-field-box{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+div#footer{
+    padding-top: 30px;
+}
+
+@media screen and ( max-width:768px) {
+    div.half-color-background{
+        margin-top: 30px;
+        background-color: #d2d9ff ;
+    }
+    div#last-field > div.row div.box-shadow{
+        height: 250px;
+    }
+}
+@media  screen and ( max-width:575px) {
+    div#about-us {
+        display: block;
+        background:#fff url(./images//background2.jpg) no-repeat 50%;
+        margin-top: 56px;
+        height: 200px;
+        background-size:cover ;
+    }
+    div.half-color-background{
+        margin-top: 0;
+    }
+    div#custom-text-container{
+        padding: 0 30px 30px 30px;
+        margin-top: -100px;
+    }  
+    div#custom-text-container div.row div p{
+        font-size: 16px;
+    } 
+    .custom-card-image{
+        height: 150px;
+    }
+    div#last-field > div.row{
+        margin: 30px 10px;
+    }
+    div#last-field > div.row div.box-shadow{
+        height: 200px;
+    }
+}
+
+@media screen and ( max-width:498px) {
+    div#last-field > div.row div.box-shadow{
+        height: 180px;
+    }
+    div.last-field-box{
+        width: 100%;
+    }
+}
+@media screen and ( max-width:415px) {
+    div#custom-text-container div.row div p{
+        font-size: 14.5px;
+    }
+    div#last-field > div.row div.box-shadow{
+        height: 165px;
+    }
+}
+@media screen and ( max-width:364px) {
+    div#custom-text-container div.row div p{
+        font-size: 13.5px;
+    }
+}
+@media screen and (max-width:768px) and (min-width:576px){
+    div#error-page-img img{
+        height: 400px;
+    }
+}
+
+/*___________USER PROFILE PAGE ________________*/
+img.userprofile{
+    width: 100%;
+    height: auto;
+    object-fit: cover;    
+}
+@media screen and (max-width:575px){
+    .personal-detail{
+        text-align: center;
+    }
+}
+
+.profile-boxes{
+    align-items: stretch;
+}
+.profile-boxes div.card{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 350px;
+    transition: 0.5s;
+}
+.profile-boxes div.card:hover{
+    transform: scale(1.02);
+}
+
+div.order-history{
+    background-color: #eee;
+    display: flex;
+    text-align: start;
+}
+
+.post-delete{
+    padding: 10px 13px;
+}
+.post-delete:hover{
+    background-color: #a1a1a1;
+}
+/*__________BOOKINGS PAGE______________*/
+.booking-img-cover{
+    height: 220px;
+}
+.booking-img-cover img.rounded-3{
+    object-fit: cover;
+}
+.custom-booking-image{
+    border-bottom:5px solid #10bc1c;
+    border-top: 5px solid #ff914d;
+    height: 200px;
+    object-fit:contain;
+}
+.custom-card-body{
+    background-color: aliceblue;
+}
+
+@media screen and (max-width:576px){
+    .booking-img-cover{
+        height: 150px;
+    }
+}
+
+/*________SEARCH FIELD_________*/
+div#search-field{
+    background: linear-gradient(to right,#d2d9ff,#92a2f9);
+}
+div#search-container{
+    transition: height 1s ease;
+    height: calc(100vh - 100px);
+}
+
+/*________HOTEL & Influencer BOOKINGS_______*/
+div.Bookings-card{
+    position: relative;
+}
+div.Bookings-card div.Bookings-image img{
+    width: 100%;
+    height: 200px;
+}
+div.Bookings-card div.Bookings-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+    background-color:#e3e6f9;
+}
+div.Bookings-card div.Bookings-price p span.lead{
+    font-size: 25px;
+}
+.Bookings-description{
+    background-color: rgba(245, 245, 245,1);
+}
+@media screen and (max-width:576px){
+    div.Bookings-card div.Bookings-image img{
+        height: 170px;
+    }
+}
+
+/*___________INFLUENCER BOOKING________*/
+div.sub-description{
+    background-color: #dddddd;
+    border-radius: 3px;
+}
+div.sub-description-child{
+    display: flex;
+}
+div.sub-description-child div{
+    flex:1;
+}
+
+@media screen and (max-width: 767px) {
+    div.sub-description{
+        margin-bottom:1rem;
+    }
+}
+
+img.modal-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width:756px){
+    img.modal-image{
+        height: 150px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 992px){
+    .modal-lg{
+        max-width: 80%;
+    }
+}
+
+/*__________________GRID LAYOUT_______________*/
+.custom-grid-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-video-item{
+    grid-row: span 2;
+}
+.custom-grid-item{
+    width: 100%;
+    padding:5px;
+}
+.custom-grid-item:hover{
+    opacity: 0.7;
+}
+@media screen and (min-width:576px) and (max-width: 768px){
+    .custom-grid-layout{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width:575px){
+    .custom-grid-layout{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* For WebKit-based browsers (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 8px; /* Adjust the width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Set the background color of the track */
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #a1a1a1;
+    border-radius: 10px;
+    height: 100px; /* Set the color of the scrollbar handle */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Set the color of the scrollbar handle on hover */
+  }
+  
+
+
+  /*_________________CREATE POST________________*/
+  div#create-post-btn{
+    position:fixed;
+    z-index:1;
+    bottom:20px;
+    right:20px
+  }
+  div#create-post-btn button{
+    width:70px;
+    height:70px;
+    font-size:25px;
+    box-shadow:0 0 10px grey;
+  }
+  @media screen and (max-width:575px){
+    div#create-post-btn{
+        position:fixed;
+        z-index:1;
+        bottom:10px;
+        right:10px
+      }
+      div#create-post-btn button{
+        width:60px;
+        height:60px;
+        font-size:20px;
+        box-shadow:0 0 10px grey;
+      }
+  }
+
+  .modal-sm .modal-dialog {
+    max-width: 350px; /* Adjust the width as desired */
+  }
+  
+  .modal-sm .modal-content {
+    max-height: 600px; /* Adjust the height as desired */
+  }
+
+  #blog-head{
+    background: linear-gradient(to bottom, white,#d2d9ff);
+  }
+
+  .username-card:hover{
+    background-color: #fff;
+  }
+  .handle-width-user{
+    width: 150px;
+    height: 150px;
+  }
+  @media screen and (max-width:767px){
+    .handle-width-user{
+        width: 100px;
+        height: 100px;
+    }
+  }
+
+
+.followList{
+    max-height:350px;
+    overflow-y:scroll;
+}
+
+.username-card:hover{
+    background-color: #d0d0d0;
+    border-radius: 5px;
+}
+
+.content-card{
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+}
+@media screen and (min-width:576px) {
+    .content-card{
+        object-fit: cover;
+    }    
+}
+
+.hover-link:hover{
+    color: grey;
+}
